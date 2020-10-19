@@ -1,23 +1,25 @@
+<main class="flex flex-col" [ngStyle]="{ 'height.px': noHeaderVH }"> <!-- h-screen flex flex-col-->
 
-<div class="">
-  <div class="object-left">
-    <a class="nav-link-current">HOME</a>
-    <a class="nav-link" routerLink="/about">ABOUT</a>
-    <a class="nav-link" routerLink="/projects">PROJECTS</a>
-    <a class="nav-link" routerLink="/contact">CONTACT</a>
-  </div>
-  <img 
-    src="../../assets/profile_face.png" 
-    alt="my profile photo" 
-    class="border border-purple-600 rounded-full h-40 w-40 float-right mr-3">
-  <!-- <div class="border bg-purple-300 rounded-full h-20 w-20 float-right mr-3">IMG HERE</div> -->
-</div>
-<p class="bg-teal-500 hover:bg-teal-700 rounded p-4 text-white border border-purple-600 m-3">home works ... kinda!</p>
+    
+  <!--
+    <div class="w-screen h-32 bg-hero flex justify-center items-center border-t-4 border-purple-600"></div>
+  -->
+  
+  <article class="m-6 bg-gray-200 text-20 text-lato font-semibold flex-grow flex flex-col justify-center items-center text-center">
+    <p>
+      Welcome to my portfolio, the land of incomprehensible references and elaborate solutions.
+    </p>
+    <p>What I bring to the table: a direct way to increase your company's average variable name length, immediately.</p>
+    <img 
+      src="../../assets/profile_face.png" 
+      alt="my profile photo" 
+      class="border border-purple-600 rounded-full h-64 w-64 float-right mt-8">
+    <p class="mt-5">I'm Dane.</p>
+  </article>
 
-<article class="w-screen h-40 bg-hero">
-  WoW Doggie
-</article>
+  <!--
+  -->
+    <div class="w-screen h-32 bg-hero flex justify-center items-center border-t border-b-8 border-purple-600"></div>
 
-<main class="bg-gray-200 w-screen text-lg mt-5">
-  Welcome to my portfolio, the land of incomprehensible references and elaborate solutions. I'm Dane.
 </main>
+  

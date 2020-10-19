@@ -1,3 +1,29 @@
-<html>
+<html class="h-screen"> 
+  <div class="h-24 p-6 bg-teal-200 text-white text-16 rounded-md flex-grow-0 flex justify-between items-center"> <!-- border border-purple-600 border-b-4 -->
+    <!-- mx-5 my-16-->
+    <div class="object-left">
+      <a routerLink="/" [ngClass]="{ 'nav-link': !onHome, 'nav-link-current': onHome }">HOME</a>
+      <a routerLink="/about" [ngClass]="{ 'nav-link': !onAbout, 'nav-link-current': onAbout }">ABOUT</a>
+      <a routerLink="/projects" [ngClass]="{ 'nav-link': !onProjects, 'nav-link-current': onProjects }">PROJECTS</a>
+      <a routerLink="/contact" [ngClass]="{ 'nav-link': !onContact, 'nav-link-current': onContact }">CONTACT</a>
+    </div>
+
+    <div class="flex items-center">
+      <span class="text-20 text-rebecca-500 mx-5"><em>DGN</em></span>
+    </div>
+  </div>
+
   <router-outlet></router-outlet>
 </html>
+
+
+<!-- 
+  OLD RIGHT-SIDE ICONS/PICS:
+  
+      <img src="../../assets/muni_silhouette.png" class="w-20 h-20">
+      <span class="text-20 text-rebecca-500 mx-5"><em>Dane Neves</em></span>
+      <img 
+      src="../../assets/profile_face.png" 
+      alt="my profile photo" 
+      class="border border-purple-600 rounded-full h-40 w-40 float-right mr-5 hidden">
+    --> <!--64-->

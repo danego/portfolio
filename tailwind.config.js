@@ -136,7 +136,7 @@ module.exports = {
         900: '#702459',
       },
     },
-    spacing: {
+    spacing: {  //REF here
       px: '1px',
       '0': '0',
       '1': '0.25rem',
@@ -145,6 +145,7 @@ module.exports = {
       '4': '1rem',
       '5': '1.25rem',
       '6': '1.5rem',
+      '7': '1.75rem',
       '8': '2rem',
       '10': '2.5rem',
       '12': '3rem',
@@ -152,11 +153,15 @@ module.exports = {
       '20': '5rem',
       '24': '6rem',
       '32': '8rem',
+      '36': '9rem',
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '200': '20rem',
       '350': '35rem',
+      '450': '45rem',
+      '629': '62.9rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundImage: {
@@ -269,7 +274,7 @@ module.exports = {
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
-    fontSize: {
+    fontSize: { //REF here
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',
@@ -278,6 +283,7 @@ module.exports = {
       '2xl': '1.5rem',
       '16': '1.6rem',
       '3xl': '1.875rem',
+      '20': '2rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',

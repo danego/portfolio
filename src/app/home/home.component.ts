@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  noHeaderVH: number;
+  headerHeight = 60; //px
+
+  @HostListener('window:resize', ['$event']) onResize(event?) {
+    this.noHeaderVH = window.innerHeight - this.headerHeight;
+  }
 
   constructor() { }
 
   ngOnInit(): void {
+    //get current screen size to fill screen correctly (bc of separate nav bar)
+    this.onResize();
   }
 
 }
