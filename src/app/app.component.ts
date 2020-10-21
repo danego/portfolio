@@ -16,6 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
   onAbout: boolean;
   onProjects: boolean;
   onContact: boolean;
+  displayPopupNav: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -38,6 +39,9 @@ export class AppComponent implements OnInit, OnDestroy {
             this.onContact = true;
             break;
         }
+
+        //exit out of popupNavigation if on mobile
+        this.displayPopupNav = false;
       }
     });
   }
@@ -47,6 +51,14 @@ export class AppComponent implements OnInit, OnDestroy {
     this.onAbout = false;
     this.onProjects = false;
     this.onContact = false;
+  }
+
+  onEnterNav() {
+    this.displayPopupNav = true;
+  }
+
+  onExitNav() {
+    this.displayPopupNav = false;
   }
   
   ngOnDestroy() {
