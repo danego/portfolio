@@ -1,40 +1,53 @@
-<h1 class="m-10 text-rebecca-500 font-bold text-20">About Me:</h1>
 
+<h1 class="m-10 text-rebecca-500 font-bold text-20">About Me</h1>
 
-<div class="flex flex-col justify-around sm:flex-row sm:items-stretch">
-  <div class="p-4 m-3 sm:my-0 sm:mx-auto bg-gray-200 rounded">
-    <div class="w-full sm:w-500 bg-white border-rebecca-500 border-2 p-8 box-border">
-      <h2 class="text-20">Skills</h2>
+<div class="flex flex-col justify-around flex-wrap sm:flex-row sm:items-stretch">
+  <div class="p-4 m-3  sm:mx-auto bg-gray-200 rounded">
+    <h2 class="text-20 text-center">Skills</h2>
+    <div class="w-full sm:w-450 xl:w-500 bg-white border-rebecca-500 border-2 p-8 box-border"><!--sm:max-w-3xl-->
       <ul class="text-16">
         <li>
           Front End / Web
-          <ul class="list-disc ml-8">
+          <ul class="list-disc list-inside border-t border-black">
             <li>Angular2+</li>
             <li>HTML5</li>
             <li>CSS</li>
-            <li>JavaScript</li>
+            <li>JavaScript (ES6)</li>
           </ul>
         </li>
         <li>
           Back End
-          <ul class="list-disc ml-8">
+          <ul class="list-disc list-inside border-t border-black">
             <li>NodeJS</li>
             <li>Java</li>
             <li>C++</li>
           </ul>
         </li>
+        <li class="">
+          Side Skills <!-- Add thin lines under these sub headings -->
+          <div class="h-px w-40 bg-rebecca-500"></div>
+          <ul class="list-disc list-inside">
+            <li>Regex (Regular Expressions)</li>
+            <li>Tailwind (CSS framework)</li>
+            <li>Angular Material</li>
+            <li>Git, Github, Source Control (both CLI and GUI)</li>
+            <li>Sprint familiarity (trello)</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
-    
-  <div class="p-4 m-3 sm:my-0 sm:mx-auto bg-gray-200 rounded">
-    <div class="w-full h-full sm:w-500 p-10 bg-white border-rebecca-500 border-2 box-border">
-      <h2 class="text-20">Background/Education</h2>
-      <ul class="list-disc text-16 ml-8">
-        <li>UCLA</li>
+  
+  <div class="p-4 m-3 sm:mx-auto bg-gray-200 rounded flex flex-col">
+    <h2 class="text-20 text-center">Background & Education</h2>
+    <div class="w-full h-auto flex-grow p-10 sm:w-450 xl:w-500 bg-white border-rebecca-500 border-2 box-border"> <!-- sm:w-500 min & margin-->
+      <ul class="list-disc list-inside text-16">
+        <li>UCLA B.A. English 2019</li>
+        <li>EDHS Valedictorian</li>
+        <li>Library Employee</li>
         <li>Juggling</li>
-        <li>UCLA</li>
-        <li>Juggling</li>
+        <li>Cycling aficionado (one wheel and two wheels)</li>
+        <li>Puzzle solver and Rubik's Cube speedy solver</li>
       </ul>
     </div>
   </div>
