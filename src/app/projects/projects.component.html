@@ -1,9 +1,9 @@
-<h1 class="m-10 mb-5 sm:mb-10 text-rebecca-500 font-bold text-20 ultra:text-center">A sampling of my recent projects</h1>
+<h1 class="m-10 mb-5 sm:mb-10 text-rebecca-500 font-bold text-20 ultra:text-center">My Recent Projects</h1>
 
-<div class="flex flex-col lg:flex-row lg:flex-wrap justify-around md:items-stretch content-center sm:mb-9 mt-5 sm:mt-10 xxl:relative xxl:top-15p">
-  <div class="p-4 m-3 md:mx-auto bg-gray-200 rounded"> <!-- class="border border-solid border-black border-1" -->
+<div class="flex flex-col lg:flex-row lg:flex-wrap justify-around md:items-stretch content-center sm:mb-9 mt-5 sm:mt-10 ultra:relative ultra:top-10p">
+  <div class="p-4 m-3 mb-4 lg:mb-3 md:mx-auto bg-gray-200 rounded"> <!-- class="border border-solid border-black border-1" -->
     <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 flex flex-col justify-center bg-white border-solid border-rebecca-500 border-2">
-      <a href="https://cgol-angular.web.app/main" target="blank" title="Check out the cgol app!">
+      <a href="https://cgol-angular.web.app/landing" target="blank" title="Check out the cgol app!">
         <img 
         src="../../assets/cgol-landing.png" 
         alt="my version of Conway's game of life" 
@@ -20,7 +20,7 @@
     </ul>
   </div>
 
-  <div class="p-4 m-3 md:mx-auto bg-gray-200 rounded">
+  <div class="p-4 m-3 my-4 lg:my-3 md:mx-auto bg-gray-200 rounded">
     <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 bg-white"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
       <a href="https://danego.github.io/circle-puzzle" target="blank" title="Check out the puzzle app!">
         <img 
@@ -34,10 +34,32 @@
     <label for="" class="text-20"><em>Concentra</em> Puzzle Solver</label>
     <ul class="list-disc ml-10 text-16 sm:w-475 lg:w-425 xl:w-475">
       <li>A solution generator and visual display for the <em>Concentra</em> Puzzle, an edge-matching puzzle claiming but a single solution.</li>
-      <li>Solved using brute force to try out many (not all) of the possible permutations and found at least 54 solutions.</li>
+      <li>Solved using brute force to try out all of the possible permutations and found 63 solutions.</li>
       <li>Currently built with only vanilla JavaScript, HTML, and CSS.</li>
       <li>Check out the <a href="https://github.com/danego/circle-puzzle" target="blank" class="underline hover:text-teal-500">puzzle GitHub repo!</a></li>
     </ul>
+  </div>
+
+  <div class="p-4 m-3 my-4 lg:my-6 ultra:my-3 md:mx-auto bg-gray-200 rounded">
+    <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 bg-white flex flex-col justify-center border-solid border-rebecca-500 border-2"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
+      <img 
+        src="../../assets/home-pic-white.png" 
+        alt="my puzzle solution page" 
+        width="500px"
+        class="">
+    </div>
+    <label for="" class="text-20">Portfolio</label>
+    <ul class="list-disc ml-10 text-16 sm:w-475 lg:w-425 xl:w-475">
+      <li>Obviously you're here, but check out the repo and readme for more info: <a href="https://github.com/danego/portfolio" target="blank" class="underline hover:text-teal-500">portfolio GitHub repo!</a></li>
+      <li>Hover over the initials to see the Angular Animations photo popup.</li>
+      <li>Angular Features: Routing, animations, hostlisteners, and more!</li>
+      <li>(Honeycomb SVG pattern is created by Steve Schoger, <a href="http://www.heropatterns.com/" target="blank" class="underline hover:text-teal-500">Hero Patterns</a>, CC 4.0).</li>
+    </ul>
+  </div>
+
+  <!--empty item to align odd 'project' div-->
+  <div class="p-4 m-3 md:mx-auto hidden lg:block ultra:hidden">
+    <div class="mb-3 sm:w-500 lg:w-450 xl:w-500"></div>
   </div>
 </div>
 

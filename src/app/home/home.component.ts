@@ -11,6 +11,10 @@ export class HomeComponent implements OnInit {
   headerHeight = 60; //px
 
   @HostListener('window:resize', ['$event']) onResize(event?) {
+    //if on mobile, use outerHeight to account for browser bars
+    if (window.innerWidth < 768) {
+      this.noHeaderVH = window.outerHeight - this.headerHeight;
+    }
     this.noHeaderVH = window.innerHeight - this.headerHeight;
   }
 

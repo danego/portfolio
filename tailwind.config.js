@@ -3,7 +3,13 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {
+    enabled: true,
+    content: [
+      './src/**/*.html',
+      './src/**/*.scss'
+    ]
+  },
   target: 'relaxed',
   prefix: '',
   important: false,
@@ -319,7 +325,11 @@ module.exports = {
     }),
     inset: {
       '0': '0',
+      '1': '1rem',
+      '5': '1.5rem',
       '10': '2.5rem',
+      '60': '6rem',
+      '10p': '10%',
       '15p': '15%',
       '1/2': '50%',
       auto: 'auto',
