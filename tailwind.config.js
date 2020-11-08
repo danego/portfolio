@@ -323,7 +323,7 @@ module.exports = {
       full: '100%',
       screen: '100vh',
     }),
-    inset: {
+    inset: {  //REF here
       '0': '0',
       '1': '1rem',
       '5': '1.5rem',
