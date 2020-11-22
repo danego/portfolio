@@ -1,9 +1,9 @@
 <html class="h-full lg:h-screen">  <!--h-screen h-full-->
-  <div class="h-24 p-6 bg-teal-200 text-white text-16 rounded-md flex-grow-0 flex justify-between items-center sticky z-20 top-0"> <!-- border border-purple-600 border-b-4 -->
+  <div class="h-24 p-6 rounded-md bg-teal-200 text-16 text-white sticky top-0 z-20 flex-grow-0 flex justify-between items-center"> <!-- border border-purple-600 border-b-4 -->
     <!-- mx-5 my-16-->
 
     <svg 
-      class="h-12 w-12 sm:hidden" 
+      class="w-12 h-12 sm:hidden" 
       (click)="onEnterNav()"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rebeccapurple" 
       width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/>
@@ -14,7 +14,7 @@
       <div [ngClass]="{ 'mobile-nav-open': displayPopupNav, 'mobile-hidden-block': true }"> <!-- object-left -->
         
         <svg 
-          class="self-end m-1 mb-10 h-9 w-9   sm:hidden"  
+          class="w-9 h-9 m-1 mb-10 self-end sm:hidden"  
           (click)="onExitNav()"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#38b2ac" width="18px" height="18px">
           <path d="M0 0h24v24H0z" fill="none"/>
@@ -44,15 +44,3 @@
 
   <router-outlet></router-outlet>
 </html>
-
-
-<!-- 
-  OLD RIGHT-SIDE ICONS/PICS:
-  
-      <img src="../../assets/muni_silhouette.png" class="w-20 h-20">
-      <span class="text-20 text-rebecca-500 mx-5"><em>Dane Neves</em></span>
-      <img 
-      src="../../assets/profile_face.png" 
-      alt="my profile photo" 
-      class="border border-purple-600 rounded-full h-40 w-40 float-right mr-5 hidden">
-    --> <!--64-->

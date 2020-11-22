@@ -5,7 +5,7 @@
     <div class="w-screen h-32 bg-hero flex justify-center items-center border-t-4 border-purple-600"></div>
   -->
   
-  <article class="m-6 xxl:m-12 ultra:m-24 bg-gray-200 text-20 sm:text-4xl text-lato font-semibold flex-grow flex flex-col justify-around sm:justify-evenly lg:justify-center items-center text-center">
+  <article class="m-6 xxl:m-12 ultra:m-24 bg-gray-200 text-20 sm:text-4xl text-lato font-semibold text-center flex-grow flex flex-col justify-around sm:justify-evenly lg:justify-center items-center">
     <div class=""> <!--lg:relative lg:bottom-60-->
       <p class="sm:mx-4 lg:mx-8">
         Ready to tackle all kinds of challenges with my love of problem solving.
@@ -14,15 +14,16 @@
       </p>
     </div>
     <div class="lg:mt-24 xxl:mt-32"> <!--  lg:relative lg:top-60-->
-      <img 
-        src="../../assets/profile_face.png" 
-        alt="my profile photo" 
-        class="border border-purple-600 rounded-full h-64 w-64 float-right"> <!--mt-24-->
+      <picture class="w-64 h-64 border border-purple-600 rounded-full float-right">
+        <source media="(max-width: 767px)" srcset="../../assets/profile-face-500.png">
+        <source media="(min-width: 768px)" srcset="../../assets/profile-face-1mb.png">
+        <img src="../../assets/profile-face-1mb.png" alt="my profile photo">
+      </picture>
       <p class="relative sm:top-5">I'm Dane.</p>
     </div>
   </article>
 
-  <div class="w-screen h-32 bg-hero flex justify-center items-center border-t border-b-8 border-purple-600"></div>
+  <div class="w-screen h-32 border-t border-b-8 border-purple-600 bg-hero flex justify-center items-center"></div>
 
 </main>
   

@@ -53,7 +53,12 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-
+/* For un-hiding list item*/
+@screen sm {
+  .list-visible {
+    display: list-item !important;
+  }
+}
 
 /*
 @layer utilities {

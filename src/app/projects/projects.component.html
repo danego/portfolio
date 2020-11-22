@@ -1,18 +1,18 @@
-<h1 class="m-10 mb-5 sm:mb-10 text-rebecca-500 font-bold text-20 ultra:text-center">My Recent Projects</h1>
+<h1 class="m-10 mb-5 sm:mb-10 text-20 font-bold text-rebecca-500 ultra:text-center">My Recent Projects</h1>
 
-<div class="flex flex-col lg:flex-row lg:flex-wrap justify-around md:items-stretch content-center sm:mb-9 mt-5 sm:mt-10 ultra:relative ultra:top-10p">
-  <div class="p-4 m-3 mb-4 lg:mb-3 md:mx-auto bg-gray-200 rounded"> <!-- class="border border-solid border-black border-1" -->
-    <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 flex flex-col justify-center bg-white border-solid border-rebecca-500 border-2">
+<div class="sm:mb-9 mt-5 sm:mt-10 flex flex-col justify-around content-center lg:flex-row lg:flex-wrap md:items-stretch ultra:relative ultra:top-10p">
+  <div class="m-3 mb-4 lg:mb-3 md:mx-auto p-4 rounded bg-gray-200"> <!-- class="border border-solid border-black border-1" -->
+    <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 border-solid border-2 border-rebecca-500 bg-white flex flex-col justify-center">
       <a href="https://cgol-angular.web.app/landing" target="blank" title="Check out the cgol app!">
-        <img 
-        src="../../assets/cgol-landing.png" 
-        alt="my version of Conway's game of life" 
-        width="500px"
-        >
+        <picture >
+          <source media="(max-width: 767px)" srcset="../../assets/projects/cgol-landing-small.png">
+          <source media="(min-width: 768px)" srcset="../../assets/projects/cgol-landing.png">
+          <img width="500px" src="../../assets/projects/cgol-landing.png" alt="my version of Conway's game of life">
+        </picture>
       </a>
     </div>
     <label for="" class="text-20">CGoL</label>
-    <ul class="list-disc ml-10 text-16 sm:w-475 lg:mt-4 lg:w-425 xl:w-475">
+    <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 lg:mt-4 text-16 list-disc">
       <li>My version of Conway's Game of Life, built in Angular.</li>
       <li>Angular Features: Multiple components, a service, a reactive form, and multiple custom directives.</li>
       <li>Be sure to check out the Angular Material themed stopwatch!</li>
@@ -20,19 +20,21 @@
     </ul>
   </div>
 
-  <div class="p-4 m-3 my-4 lg:my-3 md:mx-auto bg-gray-200 rounded">
-    <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 bg-white"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
+  <div class="m-3 my-4 lg:my-3 md:mx-auto p-4 rounded bg-gray-200">
+    <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 bg-white"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
       <a href="https://danego.github.io/circle-puzzle" target="blank" title="Check out the puzzle app!">
-        <img 
-        src="../../assets/circle-puzzle-full.png" 
-        alt="my puzzle solution page" 
-        width="500px"
-        height="350px"
-        class="border-solid border-rebecca-500 border-2 h-full">
+        <picture>
+          <source media="(max-width: 767px)" srcset="../../assets/projects/circle-puzzle-full-small.png">
+          <source media="(min-width: 768px)" srcset="../../assets/projects/circle-puzzle-full.png">
+          <img 
+            src="../../assets/projects/circle-puzzle-full.png" 
+            alt="my puzzle solution page"
+            class="border-solid border-2 border-rebecca-500">
+        </picture>
       </a>
     </div>
     <label for="" class="text-20"><em>Concentra</em> Puzzle Solver</label>
-    <ul class="list-disc ml-10 text-16 sm:w-475 lg:w-425 xl:w-475">
+    <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 text-16 list-disc">
       <li>A solution generator and visual display for the <em>Concentra</em> Puzzle, an edge-matching puzzle claiming but a single solution.</li>
       <li>Solved using brute force to try out all of the possible permutations and found 63 solutions.</li>
       <li>Currently built with only vanilla JavaScript, HTML, and CSS.</li>
@@ -40,29 +42,49 @@
     </ul>
   </div>
 
-  <div class="p-4 m-3 my-4 lg:my-6 ultra:my-3 md:mx-auto bg-gray-200 rounded">
-    <div class="mb-3 sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 bg-white flex flex-col justify-center border-solid border-rebecca-500 border-2"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
+  <div class="m-3 my-4 lg:my-6 ultra:my-3 md:mx-auto p-4 rounded bg-gray-200">
+    <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 border-solid border-2 border-rebecca-500 bg-white flex flex-col justify-center"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
       <img 
-        src="../../assets/home-pic-white.png" 
-        alt="my puzzle solution page" 
+        src="../../assets/projects/home-pic-white.png" 
+        alt="snapshot of this portfolio site" 
         width="500px"
         class="">
     </div>
     <label for="" class="text-20">Portfolio</label>
-    <ul class="list-disc ml-10 text-16 sm:w-475 lg:w-425 xl:w-475">
+    <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 text-16 list-disc">
       <li>Obviously you're here, but check out the repo and readme for more info: <a href="https://github.com/danego/portfolio" target="blank" class="underline hover:text-teal-500">portfolio GitHub repo!</a></li>
-      <li>Hover over the initials to see the Angular Animations photo popup.</li>
+      <li class="hidden list-visible">Hover over the initials to see the Angular Animations photo popup.</li>
       <li>Angular Features: Routing, animations, hostlisteners, and more!</li>
       <li>(Honeycomb SVG pattern is created by Steve Schoger, <a href="http://www.heropatterns.com/" target="blank" class="underline hover:text-teal-500">Hero Patterns</a>, CC 4.0).</li>
     </ul>
   </div>
 
-  <!--empty item to align odd 'project' div-->
-  <div class="p-4 m-3 md:mx-auto hidden lg:block ultra:hidden">
-    <div class="mb-3 sm:w-500 lg:w-450 xl:w-500"></div>
+  <div class="m-3 my-4 lg:my-6 ultra:my-3 md:mx-auto p-4 rounded bg-gray-200">
+    <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 border-solid border-2 border-rebecca-500 bg-white flex flex-col justify-center"> <!-- Note- Increase size for tablet bc it'll be flex-col anyways, but decrease for small laptop so it shows both on same row. smd:w-500 md:h-350 -->
+      <a href="https://danego.github.io/covid-movie-seat-booking/" target="blank" title="Check out the movie picker!">
+        <img 
+          src="../../assets/projects/movie-picker.png" 
+          alt="my movie seat selector page" 
+          width="500px"
+          class="">
+      </a>
+    </div>
+    <label for="" class="text-20">Movie Seat Picker</label>
+    <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 text-16 list-disc">
+      <li>This is a small group project that I led. As a team, we built the core functionality. On my own, I spruced up the appearance to better match the regular movie-going experience and added some small features for the after-purchase state.</li>
+      <li>It's built with JavaScript, HTML, and CSS. The current CSS is a mix of Tailwind and vanilla CSS.</li>
+      <li>See our group's repo for more info: <a href="https://github.com/GitFitCode/covid-movie-seat-booking" target="blank" class="underline hover:text-teal-500">movie picker on GitHub!</a></li>
+    </ul>
   </div>
+
+  <!-- empty item to align odd 'project' div -->
+  <!--
+    <div class="p-4 m-3 md:mx-auto hidden lg:block ultra:hidden">
+      <div class="mb-3 sm:w-500 lg:w-450 xl:w-500"></div>
+    </div>
+  -->
 </div>
 
-<footer class="w-screen h-3 bg-rebecca-500 mt-3 lg:hidden"></footer>
+<footer class="w-screen h-3 mt-3 bg-rebecca-500 lg:hidden"></footer>
 
 <!--       <li>Possible solutions are deemed successful when the edge of each piece matches its neighbors on the above and below ring.</li> -->
