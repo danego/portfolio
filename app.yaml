@@ -1,0 +1,60 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+skip_files:
+- ^(?!dist)  # Skip any files not in the dist folder
+handlers:
+- url: /(.+\.js)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.js)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+\.css)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.css)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+\.png)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.png)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+\.jpg)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.jpg)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+\.svg)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.svg)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /favicon.ico
+  static_files: dist/portfolio/favicon.ico
+  upload: dist/portfolio/favicon.ico
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+\.json)
+  static_files: dist/portfolio/\1
+  upload: dist/portfolio/(.+\.json)
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /(.+)
+  static_files: dist/portfolio/index.html
+  upload: dist/portfolio/index.html
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /
+  static_files: dist/portfolio/index.html
+  upload: dist/portfolio/index.html
+  secure: always
+  redirect_http_response_code: 301

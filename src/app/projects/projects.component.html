@@ -1,6 +1,28 @@
 <h1 class="m-10 mb-5 sm:mb-10 text-20 font-bold text-rebecca-500 ultra:text-center">My Recent Projects</h1>
 
 <div class="sm:mb-9 mt-5 sm:mt-10 flex flex-col justify-around content-center lg:flex-row lg:flex-wrap md:items-stretch ultra:relative ultra:top-10p">
+
+  <div class="m-3 mb-4 lg:mb-3 md:mx-auto p-4 rounded bg-gray-200"> <!-- class="border border-solid border-black border-1" -->
+    <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 border-solid border-2 border-rebecca-500 bg-white flex flex-col justify-center">
+      <a href="https://concentra-solver.appspot.com" target="blank" title="Check out the new puzzle solver!">
+        <picture >
+          <!-- 
+          <source media="(max-width: 767px)" srcset="../../assets/projects/cgol-landing-small.png">
+          <source media="(min-width: 768px)" srcset="../../assets/projects/cgol-landing.png"> 
+          -->
+          <img width="500px" src="../../assets/projects/concentra-solver.png" alt="my Concentra puzzle app">
+        </picture>
+      </a>
+    </div>
+    <label for="" class="text-20"><em>Concentra</em> Puzzle (Angular Version)</label>
+    <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 lg:mt-4 text-16 list-disc">
+      <li>The new and improved version! Now the puzzle is interactable as well as providing info and hints about solutions.</li>
+      <li>The core functionality is built off of the Angular Material Drag & Drop with a lot of customization for features like the piece banks.</li>
+      <li>Development for this one is ongoing and mobile friendly view is in that pipeline.</li>
+      <li>See the <a href="https://github.com/danego/circle-puzzle-angular" target="blank" class="underline hover:text-teal-500">code repo on GitHub.</a></li>
+    </ul>
+  </div>
+
   <div class="m-3 mb-4 lg:mb-3 md:mx-auto p-4 rounded bg-gray-200"> <!-- class="border border-solid border-black border-1" -->
     <div class="sm:w-500 sm:h-350 lg:w-450 lg:h-315 xl:w-500 xl:h-350 mb-3 border-solid border-2 border-rebecca-500 bg-white flex flex-col justify-center">
       <a href="https://cgol-angular.web.app/landing" target="blank" title="Check out the cgol app!">
@@ -14,7 +36,7 @@
     <label for="" class="text-20">CGoL</label>
     <ul class="sm:w-475 lg:w-425 xl:w-475 ml-10 lg:mt-4 text-16 list-disc">
       <li>My version of Conway's Game of Life, built in Angular.</li>
-      <li>Angular Features: Multiple components, a service, a reactive form, and multiple custom directives.</li>
+      <li>Angular Features: Multiple components, a service, reactive forms, and multiple custom directives.</li>
       <li>Be sure to check out the Angular Material themed stopwatch!</li>
       <li>See more info on the <a href="https://github.com/danego/CGoL-angular" target="blank" class="underline hover:text-teal-500">CGoL GitHub repo!</a></li>
     </ul>
@@ -79,10 +101,10 @@
 
   <!-- empty item to align odd 'project' div -->
   <!--
+  -->
     <div class="p-4 m-3 md:mx-auto hidden lg:block ultra:hidden">
       <div class="mb-3 sm:w-500 lg:w-450 xl:w-500"></div>
     </div>
-  -->
 </div>
 
 <footer class="w-screen h-3 mt-3 bg-rebecca-500 lg:hidden"></footer>
