@@ -10,6 +10,17 @@ export class HomeComponent implements OnInit {
   noHeaderVH: number;
   headerHeight = 60; //px
   mobileBottomBrowserHeight = 75; //px
+  profileSurroundingCircleSize = 220; //px
+  githubPosition = 5;
+  circlePositions = {
+    iconOne: 0,
+    iconTwo: 0,
+    iconThree: 0,
+    iconOneFinal: 4,
+    iconTwoFinal: 6,
+    iconThreeFinal: 8,
+    firstPosition: 11
+  };
 
   @HostListener('window:resize', ['$event']) onResize(event?) {
     //mobile landscape orientation
@@ -41,6 +52,40 @@ export class HomeComponent implements OnInit {
     }
     //get current screen size to fill screen correctly (bc of separate nav bar)
     this.onResize();
+
+    this.animateCircleElements();
   }
 
+  animateCircleElements(startingGateValue: number = 1) {
+    if (this.circlePositions.iconOne > this.circlePositions.iconOneFinal || startingGateValue === 1) {
+      window.setTimeout(() => {
+  
+        if (startingGateValue >= 1 && (this.circlePositions.iconOne > this.circlePositions.iconOneFinal || this.circlePositions.iconOne === 0)) {
+          this.circlePositions.iconOne === 0 ? 
+            this.circlePositions.iconOne = this.circlePositions.firstPosition:
+            this.circlePositions.iconOne--;
+        }
+        if (startingGateValue >= 3 && (this.circlePositions.iconTwo > this.circlePositions.iconTwoFinal || this.circlePositions.iconTwo === 0)) {
+          this.circlePositions.iconTwo === 0 ? 
+            this.circlePositions.iconTwo = this.circlePositions.firstPosition:
+            this.circlePositions.iconTwo--;
+        }
+        if (startingGateValue >= 5 && (this.circlePositions.iconThree > this.circlePositions.iconThreeFinal || this.circlePositions.iconThree === 0)) {
+          this.circlePositions.iconThree === 0 ? 
+            this.circlePositions.iconThree = this.circlePositions.firstPosition:
+            this.circlePositions.iconThree--;
+        }
+        
+        this.animateCircleElements(++startingGateValue);
+      }, 150);
+    }
+  }
+
+  resetAndAnimateCircleElements() {
+    this.circlePositions.iconOne = 0;
+    this.circlePositions.iconTwo = 0;
+    this.circlePositions.iconThree = 0;
+
+    this.animateCircleElements();
+  }
 }

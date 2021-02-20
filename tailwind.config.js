@@ -4,7 +4,7 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   purge: {
-    enabled: true,
+    enabled: false,
     content: [
       './src/**/*.html',
       './src/**/*.scss'
@@ -158,9 +158,11 @@ module.exports = {
       '9': '2.25rem',
       '10': '2.5rem',
       '12': '3rem',
+      '14': '3.5rem',
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '36': '9rem',
       '40': '10rem',
@@ -329,6 +331,7 @@ module.exports = {
       '5': '1.5rem',
       '10': '2.5rem',
       '60': '6rem',
+      '80': '8rem',
       '10p': '10%',
       '15p': '15%',
       '1/2': '50%',

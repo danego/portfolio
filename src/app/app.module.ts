@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HoverPhotoComponent } from './hover-photo/hover-photo.component';
+import { PositionCircleDirective } from './position-circle.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HoverPhotoComponent } from './hover-photo/hover-photo.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    HoverPhotoComponent
+    HoverPhotoComponent,
+    PositionCircleDirective
   ],
   imports: [
     BrowserModule,
