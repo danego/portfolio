@@ -14,12 +14,12 @@
       </p>
     </div>
     <div 
-      class="lg:mt-24 xxl:mt-32 ring rounded-full relative flex justify-center items-center" 
+      class="lg:mt-24 xxl:mt-32 rounded-full relative flex justify-center items-center" 
       [ngStyle]="{'width': profileSurroundingCircleSize + 'px', 'height': profileSurroundingCircleSize + 'px'}">
       <p 
-        class="absolute sm:top-5 w-36 h-16 bg-gray-200 z-10"
+        class="absolute sm:top-5 w-40 h-16 rounded-full bg-gray-200 z-10"
         [positionCircle]="0"
-        [pieceWidth]="90"
+        [pieceWidth]="100"
         [pieceHeight]="40"
         [circleSize]="profileSurroundingCircleSize"
         [rotationDisabled]="true">
@@ -57,8 +57,8 @@
       </div>
 
       <picture 
-        class="w-64 h-64 border border-purple-600 rounded-full absolute cursor-pointer"
-        (click)="resetAndAnimateCircleElements()"> <!-- mt-28 -ml-32 -->
+        class="w-64 h-64 border border-purple-600 box-border rounded-full absolute cursor-pointer"
+        (click)="onAnimateCircleElements()"> <!-- mt-28 -ml-32 -->
         <source media="(max-width: 767px)" srcset="../../assets/profile-face-500.png">
         <source media="(min-width: 768px)" srcset="../../assets/profile-face-1mb.png">
         <img src="../../assets/profile-face-1mb.png" alt="my profile photo">

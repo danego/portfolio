@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   headerHeight = 60; //px
   mobileBottomBrowserHeight = 75; //px
   profileSurroundingCircleSize = 220; //px
-  githubPosition = 5;
+  circleIconsDisplayed: boolean = true;
   circlePositions = {
     iconOne: 0,
     iconTwo: 0,
@@ -59,7 +59,6 @@ export class HomeComponent implements OnInit {
   animateCircleElements(startingGateValue: number = 1) {
     if (this.circlePositions.iconOne > this.circlePositions.iconOneFinal || startingGateValue === 1) {
       window.setTimeout(() => {
-  
         if (startingGateValue >= 1 && (this.circlePositions.iconOne > this.circlePositions.iconOneFinal || this.circlePositions.iconOne === 0)) {
           this.circlePositions.iconOne === 0 ? 
             this.circlePositions.iconOne = this.circlePositions.firstPosition:
@@ -74,18 +73,36 @@ export class HomeComponent implements OnInit {
           this.circlePositions.iconThree === 0 ? 
             this.circlePositions.iconThree = this.circlePositions.firstPosition:
             this.circlePositions.iconThree--;
-        }
-        
+        } 
+
         this.animateCircleElements(++startingGateValue);
       }, 150);
     }
   }
 
-  resetAndAnimateCircleElements() {
-    this.circlePositions.iconOne = 0;
-    this.circlePositions.iconTwo = 0;
-    this.circlePositions.iconThree = 0;
+  animateCircleElementsReset(startingGateValue: number = 1) {
+    if (this.circlePositions.iconOne > 0 || this.circlePositions.iconTwo > 0 || this.circlePositions.iconThree > 0) {
+      window.setTimeout(() => {
+        if (this.circlePositions.iconOne !== 0) {
+          this.circlePositions.iconOne--;
+        }
+        if (this.circlePositions.iconTwo !== 0 ) { 
+          this.circlePositions.iconTwo--;
+        }
+        if (this.circlePositions.iconThree !== 0) {
+          this.circlePositions.iconThree--;
+        } 
 
-    this.animateCircleElements();
+        this.animateCircleElementsReset(--startingGateValue);
+      }, 150);
+    }
+  }
+
+  //when clicked, call correct animation then toggle state
+  onAnimateCircleElements() {
+    this.circleIconsDisplayed ?
+      this.animateCircleElementsReset(0) :
+      this.animateCircleElements();
+    this.circleIconsDisplayed = !this.circleIconsDisplayed;
   }
 }

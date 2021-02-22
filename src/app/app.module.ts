@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { HoverPhotoComponent } from './hover-photo/hover-photo.component';
 import { PositionCircleDirective } from './position-circle.directive';
 
@@ -15,7 +14,6 @@ import { PositionCircleDirective } from './position-circle.directive';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent,
     HoverPhotoComponent,
     PositionCircleDirective
   ],

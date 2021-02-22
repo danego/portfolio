@@ -3,14 +3,12 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '', component: HomeComponent, data: {animation: 'home'}},
+  { path: 'about', component: AboutComponent, data: {animation: 'about'} },
   //{ path: 'projects', loadChildren: "./projects/projects.module#ProjectsModule" },
-  { path: 'projects', loadChildren: () => import("./projects/projects.module").then(m => m.ProjectsModule) },
-  { path: 'contact', component: ContactComponent }
+  { path: 'projects', loadChildren: () => import("./projects/projects.module").then(m => m.ProjectsModule), data: {animation: 'projects'}},
 ];
 
 @NgModule({
