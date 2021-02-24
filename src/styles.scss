@@ -8,12 +8,8 @@ html {
 }
 
 .nav-link-current {
-  @apply inline-block bg-teal-500 rounded text-white px-5 py-1 m-1 text-16
+  @apply bg-teal-500 text-white !important
 }
-.nav-link-current:hover {
-  @apply bg-teal-500
-}
-
 //CONSIDER making links all same width ...
 .nav-link {
   @apply inline-block rounded text-teal-500 px-5 py-1 m-1 text-16
@@ -23,26 +19,8 @@ html {
   @apply text-teal-700
 }
 
-// need screen rule because can't use @appply and responsive
-.mobile-hidden-block {
-  @apply hidden 
-}
-@screen sm {
-  .mobile-hidden-block {
-    @apply block
-  }
-}
-
-.mobile-nav-open {
-  @apply flex flex-col absolute top-0 left-0 bg-gray-200 fixed h-full p-1 border-r-2 border-gray-600 z-20
-}
-
-.mobile-nav-bg {
-  @apply bg-gray-800 bg-opacity-75 h-screen w-screen fixed absolute top-0 left-0 z-10
-}
 // alternative: 
 // inline-block bg-teal-300 rounded text-white px-2 m-1 hover:bg-teal-500
-
 .bg-hero {
   background-color: #ece5e5; //WHICH COLOR? DIRTY OR ...
   background-color: #edf2f7; // ... CLEAN MATCHING
