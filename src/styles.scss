@@ -38,10 +38,12 @@ html {
   }
 }
 
-/*
-@layer utilities {
-  .btn-blue {
-    bg-blue-700 rounded;
+/* About Page - Progress Bars */
+.w-custom {
+  width: calc(100% - 20px);
+}
+@screen sm {
+  .w-custom {
+    width: 400px;
   }
 }
-*/

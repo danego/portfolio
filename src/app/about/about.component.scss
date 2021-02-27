@@ -1,0 +1,148 @@
+
+.logo-parent {
+  position: relative;
+  margin: 10px 0px;
+}
+.logo-parent div:nth-child(1) {
+  position: relative !important;
+  top: 1px !important;
+  left: 10px;
+  color: white;
+  z-index: 15;
+}
+.logo-parent div:nth-child(2) {
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+  top: -20px;
+  z-index: 10;
+}
+.logo-parent div:nth-child(2) img {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  right: -20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Logo Specific */
+/* Front End */
+.angular :nth-child(2) {
+  background: linear-gradient(to right, rgba(219, 14, 54, .9) 69%, transparent 77%);
+  border: 1px rgb(193, 20, 50) solid;
+}
+.angular img {
+  top: -18px !important;
+  right: -26px !important;
+}
+.css :nth-child(2) {
+  background: linear-gradient(to right, rgba(46, 106, 237, .9) 90%, transparent 95%);
+  border: 1px rgb(42, 83, 224) solid;
+}
+.css img {
+  max-height: 45px !important;
+  top: -13px !important;
+  right: -20px !important;
+}
+.html :nth-child(2) {
+  background: linear-gradient(to right, rgba(239, 101, 52, .8) 95%, transparent 100%);
+  border: 1px rgb(226, 78, 48) solid;
+}
+.html img {
+  max-height: 45px !important;
+  top: -13px !important;
+  right: -20px !important;
+}
+.javascript :nth-child(2) {
+  background: linear-gradient(to right, rgb(239, 218, 91) 80%, transparent 87%);
+  border: 1px rgb(239, 218, 91) solid;
+}
+.javascript img {
+  max-width: 40px !important;
+  top: -11px !important;
+}
+.javascript :nth-child(1) {
+  color: rgb(50, 51, 48) !important;
+}
+.typescript :nth-child(2) {
+  background: linear-gradient(to right, rgb(53, 122, 195) 78%, transparent 83%);
+  border: 1px rgb(48, 110, 177) solid;
+}
+.typescript img {
+  max-width: 40px !important;
+  top: -11px !important;
+}
+
+/* Back End*/
+.node :nth-child(2) {
+  background: linear-gradient(to right, rgb(122, 180, 101) 60%, transparent 70%);
+  border: 1px rgb(65, 133, 64) solid;
+}
+.node img {
+  background-color: white;
+  top: -8px !important;
+  right: -25px !important;
+  border: 1px rgb(65, 133, 64) solid;
+  border-radius: 10%;
+  padding: 2px;
+}
+.java :nth-child(2) {
+  background: linear-gradient(to right, rgba(233, 36, 46, .9) 30%, transparent 45%);
+  border: 1px rgb(233, 36, 46) solid;
+}
+.java img {
+  background-color: white;
+  top: -8px !important;
+  right: -25px !important;
+  border: 1px rgb(233, 36, 46) solid;
+  border-radius: 10%;
+  padding: 2px;
+}
+.cpp :nth-child(2) {
+  background: linear-gradient(to right, rgb(102, 155, 208) 24%, transparent 30%);
+  border: 1px rgb(6, 70, 128) solid;
+}
+.cpp img {
+  max-width: 40px !important;
+  top: -14px !important;
+}
+.github :nth-child(2) {
+  background: linear-gradient(to right, #333333 70%, transparent 78%);
+  border: 1px black solid;
+}
+.github img {
+  max-width: 40px !important;
+  top: -12px !important;
+  background-color: white;
+}
+
+
+
+.red-split-line {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(255, 0, 0, .4);
+  right: 0px;
+  z-index: 100;
+}
+.blue-split-line-1 {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(173, 216, 230, .6);
+  right: 20px;
+  z-index: 100;
+}
+.blue-split-line-2 {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(173, 216, 230, .6);
+  right: -20px;
+  z-index: 100;
+}

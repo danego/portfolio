@@ -3,50 +3,88 @@
 
 <div class="mb-4 md:mb-8 flex flex-col flex-wrap justify-around sm:flex-row sm:items-stretch xxl:relative xxl:top-10p">
   <div class="m-3 mb-4 lg:mb-3 sm:mx-auto p-4 rounded bg-gray-200 self-stretch flex flex-col">
-    <h2 class="text-20 text-center">Skills</h2>
-    <div class="w-full sm:w-500 lg:w-450 xl:w-500 p-8 box-border border-2 border-rebecca-500 bg-white flex-grow"><!--sm:max-w-3xl-->
-      <ul class="ml-10 sm:ml-12 text-16 list-inside">
-        <li class="mb-2 -ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Front End / Web</strong></li><!-- underline p-4 -->
+    <h2 class="text-20 text-center">Primary Skills</h2>
+    <div class="p-8 pr:24 sm:pr-28     box-border border-2 border-rebecca-500 bg-white flex-grow"><!--sm:max-w-3xl   w-full sm:w-500 lg:w-450 xl:w-500-->
+      <ul class="md:ml-10 sm:ml-12 text-16 list-inside">
+        <li class="mb-2 sm:-ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Front End / Web</strong></li><!-- underline p-4 -->
         <li>
-          <ul class="list-disc list-outside">
-            <li>Angular2+,</li>
-            <li class="list-none">Angular Material</li>
-            <li>HTML5</li>
-            <li>CSS,</li>
-            <li class="list-none">Tailwind (CSS framework)</li>
-            <li>JavaScript (ES6),</li>
-            <li class="list-none">TypeScript</li>
+          <ul class="list-none relative"> <!-- list-disc -->
+            <li class="logo-parent angular">
+              <div>Angular2+</div>
+              <div class="rounded-full w-custom">
+                <img width="50px" src="../../assets/about/angular.png">
+              </div>
+            </li>
+            <li class="logo-parent css">
+              <div>CSS</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/css.png">
+              </div>
+            </li>
+            <li class="logo-parent html">
+              <div>HTML5</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/html5.png">
+              </div>
+            </li>
+            <li class="logo-parent javascript">
+              <div>JavaScript</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/javascript.png">
+              </div>
+            </li>
+            <li class="logo-parent typescript">
+              <div>TypeScript</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/typescript.png">
+              </div>
+            </li>
+
           </ul>
         </li>
-        <li class="mb-2 mt-4 -ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Back End</strong></li>
+        <li class="mb-2 mt-4 sm:-ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Back End</strong></li>
         <li>
           <!-- <div class=""></div> h-px w-100 bg-rebecca-500 -ml-4 -->
-          <ul class="list-disc list-outside">
-            <li>NodeJS,</li>
-            <li class="list-none">Express</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            <li class="list-none">Mongoose</li>
-            <li>Java</li>
-            <li>C++</li>
+          <ul class="list-none">
+            <li class="logo-parent node">
+              <div>NodeJS / Express</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/node.png">
+              </div>
+            </li>
+            <li class="logo-parent java">
+              <div>Java</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/java.png">
+              </div>
+            </li>
+            <li class="logo-parent cpp">
+              <div>C++</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/cpp.png">
+              </div>
+            </li>
           </ul>
         </li>
-        <li class="mb-2 mt-4 -ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Additional Skills</strong></li>
+        <li class="mb-2 mt-4 sm:-ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Other Skills</strong></li>
         <li class="">
-          <ul class="list-disc list-outside">
-            <li>Regex (Regular Expressions)</li>
-            <li>Git, GitHub, Source Control (both CLI and GUI)</li>
-            <li>Sprint familiarity (trello)</li>
+          <ul class="list-none">
+            <li class="logo-parent github">
+              <div>GitHub</div>
+              <div class="rounded-full w-custom">
+                <img src="../../assets/about/github.png">
+              </div>
+            </li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
-  
+
+  <!--
   <div class="m-3 my-4 lg:my-3 sm:mx-auto p-4 rounded bg-gray-200 flex flex-col">
     <h2 class="text-20 text-center">Background & Education</h2>
-    <div class="w-full sm:w-500 lg:w-450 xl:w-500 h-auto p-8 box-border border-rebecca-500 border-2 bg-white"> <!-- sm:w-500 min & margin flex-grow -->
-      <!-- sm:w-450 xl:w-500-->
+    <div class="w-full sm:w-500 lg:w-450 xl:w-500 h-auto p-8 box-border border-rebecca-500 border-2 bg-white">
       <ul class="ml-10 sm:ml-12 text-16 list-disc list-outside">
         <li class="mb-2 mt-4 -ml-8 px-5 border-b border-rebecca-500 inline-block"><strong>Student Info</strong></li>
         <li>
@@ -81,6 +119,7 @@
       </div>
     </div>
   </div>
+  -->
 </div>
 
 <footer class="w-screen h-3 bg-rebecca-500 lg:hidden"></footer>

@@ -17,7 +17,7 @@
       class="lg:mt-24 xxl:mt-32 rounded-full relative flex justify-center items-center" 
       [ngStyle]="{'width': profileSurroundingCircleSize + 'px', 'height': profileSurroundingCircleSize + 'px'}">
       <p 
-        class="absolute sm:top-5 w-40 h-16 rounded-full bg-gray-200 z-10"
+        class="absolute sm:top-5 w-40 h-12 rounded-full bg-gray-200 z-10"
         [positionCircle]="0"
         [pieceWidth]="100"
         [pieceHeight]="40"
@@ -27,6 +27,7 @@
       </p>
       <div 
         class="w-12 absolute"
+        *ngIf="circlePositions.iconOne !== 0"
         [positionCircle]="circlePositions.iconOne"
         [pieceWidth]="30"
         [pieceHeight]="25"
@@ -37,6 +38,7 @@
       </div>
       <div 
         class="w-12 absolute"
+        *ngIf="circlePositions.iconTwo !== 0"
         [positionCircle]="circlePositions.iconTwo"
         [pieceWidth]="30"
         [pieceHeight]="30"
@@ -47,6 +49,7 @@
       </div>
       <div 
         class="w-12 absolute"
+        *ngIf="circlePositions.iconThree !== 0"
         [positionCircle]="circlePositions.iconThree"
         [pieceWidth]="30"
         [pieceHeight]="25"
