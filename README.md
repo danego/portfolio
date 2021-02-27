@@ -4,7 +4,7 @@
 
 I decided to make this app in Angular to demonstrate my working ability with Angular, although I'll be the first to admit that the app's complexity (barring some features) would be better suited to a non-framework approach.
 
-It is deployed with Google Cloud and built with Tailwind. This was my first time using Tailwind instead of CSS or Bootstrap for a full project and my takeaway is that its speed really suited designing and buidling at the same time. However, I'm not convinced that the lack of CSS structure would validate the speed in larger projects. The app is also designed responsively to work on many screens; a section where Tailwind was actually very helpful.
+It is deployed with Google Cloud and built with Tailwind. This was my first time using Tailwind instead of CSS or Bootstrap for a full project and my takeaway is that its speed really suited designing and building at the same time. However, I'm not convinced that the lack of CSS structure would validate the speed in larger projects. The app is also designed responsively to work on many screens; a section where Tailwind was actually very helpful.
 
 
 ***
@@ -12,7 +12,7 @@ It is deployed with Google Cloud and built with Tailwind. This was my first time
 
 This project was generated with Angular10 and features routing, angular animations, multiple components, directives, hostlisteners, and more! 
 
-There are five custom components: _about_, _contact_, _home_, _hover-photo_, and _projects_. These correspond to each of the 4 pages of the app and the popup photo in the top right corner. The app serves these up with _routerLinks_ placed in the main _app.component_ template. 
+There are four custom components: _about_, _home_, _hover-photo_, and _projects_. These correspond to each of the 3 pages of the app and the popup photo in the top right corner. The app serves these up with _routerLinks_ placed in the main _app.component_ template. 
 
 ### App Component ### 
 * The main App Component is where the router navigation is contained. To determine the current path, I subscribed to _router.events_ and reacted to the _event.url_. On the HTML side I used _ngClass_ to style these links/routerLinks based on the previous information (Note: in hindsight, _routerLinkActive_ is definitely the better way to achieve this). 
@@ -27,7 +27,9 @@ There are five custom components: _about_, _contact_, _home_, _hover-photo_, and
 * For similar mouse actions in the past I've used directives. But this time a component seemed like the best option because the mouse actions are associated with HTML code (i.e., a template), albeit a small one.
 
 ### Home Page/Component ###
-* For the home page I wanted to have the design fill the entire screen. Normally this would be a straightforward view height procedure, but because of the shared navigation header structure it was not. Unfortunately I was unable to set the full height through the App Component HTML page because the _router-outlet_ appends the correct component below it, not inside the _router-outlet_ element/selector. Instead, I solved it by manually setting the viewport height by subtracting the height of the navigation header. For this I used _ngStyle_ to set the height and a _HostListener_ on the _'window:resize'_ event to dynamically fill the screen.
+* For the home page I wanted to have the design fill the entire screen. For desktop screens this is easy to achieve with the CSS _calc()_  function. But for mobile the browser bars--specifically the temporary bottom bar--hinders this. For mobile I wanted it to generate the correct height once based on the view height and not update it each time that bottom browser bar pops up. So I solved it by calculating the height based on the initial height and the nav element and then using _ngStyle_ to set the height. This value is saved in _localStorage_.
+
+* One recent addition is the animation of the circular icon elements around the profile photo. The animation is done manually by increasing the index of each icon in a _setInterval_. By changing the index the positioning directive recalculates the new position in degrees, then in cartesian, then in CSS position values. 
 
 
 ***
