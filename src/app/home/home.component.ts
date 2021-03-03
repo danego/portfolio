@@ -1,4 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { DisplayBgGradientService } from '../display-bg-gradient.service';
 
 
 @Component({
@@ -42,7 +45,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private displayBgGradientService: DisplayBgGradientService) { }
 
   ngOnInit(): void {
     //check for already established height (only for mobile)
@@ -104,5 +107,10 @@ export class HomeComponent implements OnInit {
       this.animateCircleElementsReset(0) :
       this.animateCircleElements();
     this.circleIconsDisplayed = !this.circleIconsDisplayed;
+  }
+
+  canDeactivate(): Observable<boolean> | boolean {
+    this.displayBgGradientService.onRemoveBgGradient();
+    return true;
   }
 }
