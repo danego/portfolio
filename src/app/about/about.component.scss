@@ -120,29 +120,14 @@
   background-color: white;
 }
 
-
-
-.red-split-line {
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background-color: rgba(255, 0, 0, .4);
-  right: 0px;
-  z-index: 100;
+.box-shadow {
+  box-shadow: 2px 2px 2px #888888;
+  transition: box-shadow 500ms;
 }
-.blue-split-line-1 {
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background-color: rgba(173, 216, 230, .6);
-  right: 20px;
-  z-index: 100;
+.box-shadow:hover {
+  box-shadow: 4px 4px 4px #444444;
+  transition: box-shadow 500ms;
 }
-.blue-split-line-2 {
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background-color: rgba(173, 216, 230, .6);
-  right: -20px;
-  z-index: 100;
+.box-shadow-no-hover {
+  box-shadow: 2px 2px 2px #888888;
 }

@@ -1,0 +1,19 @@
+.box-shadow-container > div {
+  box-shadow: 2px 2px 2px #888888;
+  transition: box-shadow 500ms;
+}
+.box-shadow-container > div:hover {
+  box-shadow: 4px 4px 4px #444444;
+  transition: box-shadow 500ms;
+}
+
+.no-box-shadow {
+  box-shadow: none !important;
+}
+.no-box-shadow:hover {
+  box-shadow: none !important;
+}
+
+.box-shadow-no-hover {
+  box-shadow: 2px 2px 2px #888888;
+}
