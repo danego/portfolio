@@ -76,12 +76,7 @@ html {
 }
 @screen sm {
   .project-card {
-    @apply px-5
-  }
-}
-@screen md {
-  .project-card {
-    @apply mx-auto
+    @apply px-5 mx-auto
   }
 }
 @screen lg {

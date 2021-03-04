@@ -10,7 +10,7 @@ It is deployed with Google Cloud and built with Tailwind. This was my first time
 ***
 ## Angular Features ##
 
-This project was generated with Angular10 and features routing, angular animations, multiple components, directives, hostlisteners, and more! 
+This project was generated with Angular10 and features routing, angular animations, multiple components, directives, hostlisteners, route guards, services, and more! 
 
 There are four custom components: _about_, _home_, _hover-photo_, and _projects_. These correspond to each of the 3 pages of the app and the popup photo in the top right corner. The app serves these up with _routerLinks_ placed in the main _app.component_ template. 
 
@@ -31,6 +31,8 @@ There are four custom components: _about_, _home_, _hover-photo_, and _projects_
 
 * One recent addition is the animation of the circular icon elements around the profile photo. The animation is done manually by increasing the index of each icon in a _setInterval_. By changing the index the positioning directive recalculates the new position in degrees, then in cartesian, then in CSS position values. 
 
+### Diagonal / Gradient Background ###
+* I decided to continue the thematic look of the new diagonal line on the home page by adding a matching grey background on the other pages. Because of the page setup it was not a direct process to add the background to each page separately (although it definitely is possible by passing around height values). Consequently, when switching between the two differently sized pages, the diagonal background would pop and slide into place during and continuing after the animation. To combat this I decided to add a _canDeactivate_ route guard which removes the background class upon route change and adds it back in after the duration of the page slide animation.
 
 ***
 ## Attributions ##
