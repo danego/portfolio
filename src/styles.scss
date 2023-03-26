@@ -1,6 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300&display=swap');
 
 html {
@@ -12,10 +13,9 @@ html {
 }
 //CONSIDER making links all same width ...
 .nav-link {
-  @apply inline-block rounded text-teal-500 px-5 py-1 m-1 text-16
+  @apply inline-block rounded text-teal-500 px-5 py-1 m-1 text-base
 }
 .nav-link:hover {
-  //@apply text-purple-600
   @apply text-teal-700
 }
 
@@ -104,10 +104,10 @@ html {
 }
 @screen xl {
   .picture-container {
-    @apply max-w-500
+    @apply max-w-lg
   }
 }
-@screen xxl {
+@screen 2xl {
   .picture-container {
     @apply max-w-none
   }
@@ -117,7 +117,7 @@ html {
 
 /* Descriptive Text */
 .project-ul {
-  @apply ml-10 text-16 list-disc
+  @apply ml-10 text-base list-disc
 }
 @screen sm {
   .project-ul {
@@ -134,9 +134,8 @@ html {
     @apply w-475
   }
 }
-@screen xxl {
+@screen 2xl {
   .project-ul {
     @apply w-629
   }
 }
-
