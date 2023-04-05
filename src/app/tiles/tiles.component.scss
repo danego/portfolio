@@ -1,0 +1,39 @@
+$tile-width: 100px;
+
+.top-spacer {
+    margin-top: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.row-even {
+    position: relative;
+    left: calc($tile-width / 2);
+    top: calc($tile-width / 4);
+
+    margin-bottom: calc($tile-width / 2);  // 50px not 25 bc of row-shift up
+}
+
+.row-shift {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -25px;
+}
+
+// each row should be allocated 50px 
+// rest of 100px will be shared between rows
+.sizer {
+    height: 50px;
+    width: 300px;
+    background-color: plum;
+
+    position: relative;
+    top: -75px;
+    left: 0px;
+}

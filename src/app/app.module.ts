@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { HoverPhotoComponent } from './hover-photo/hover-photo.component';
 import { PositionCircleDirective } from './position-circle.directive';
 import { NavigateMobileComponent } from './navigate-mobile/navigate-mobile.component';
+import { TilesComponent } from './tiles/tiles.component';
+import { TileComponent } from './tiles/tile/tile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavigateMobileComponent } from './navigate-mobile/navigate-mobile.compo
     AboutComponent,
     HoverPhotoComponent,
     PositionCircleDirective,
-    NavigateMobileComponent
+    NavigateMobileComponent,
+    TilesComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule,

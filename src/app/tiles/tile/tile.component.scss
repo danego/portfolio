@@ -1,0 +1,38 @@
+.hexagon {
+    background-color: aquamarine;
+    opacity: 0.7;
+    width: 100px;
+    height: 100px;
+    
+
+    // hexagon 6
+    clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%
+    );
+
+    .inner-hexagon {
+        background-color: rebeccapurple;
+        width: 90%;
+        height: 90%;
+
+        // opacity: 0.7;
+        position: relative;
+        top: 5%;
+        left: 5%;
+    
+        // hexagon 6
+        clip-path: polygon(
+            50% 0%, 
+            100% 25%, 
+            100% 75%, 
+            50% 100%, 
+            0% 75%, 
+            0% 25%
+        );
+    }
+}
