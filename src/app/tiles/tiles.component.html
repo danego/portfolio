@@ -1,5 +1,11 @@
-<div class="row" *ngFor="let row of rowCount; index as i" [class.row-even]="i % 2 === 0">
-    <div class="row-shift">
-        <tile *ngFor="let tile of tileCount" [even]="i % 2 === 0"></tile>
+
+<div class="frame">
+    <div class="frame-offset">
+
+        <div class="row" *ngFor="let row of rowCount; index as i" [class.row-even]="i % 2 === 0">
+            <div class="row-shift">
+                <tile *ngFor="let tile of tileCount" [even]="i % 2 === 0"></tile>
+            </div>
+        </div>
     </div>
 </div>

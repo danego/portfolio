@@ -8,6 +8,6 @@ import { Component } from "@angular/core";
 
 export class TilesComponent {
 
-    rowCount = new Array(10);
-    tileCount = new Array(20);
+    rowCount = new Array(11);  // 20 w/o offset
+    tileCount = new Array(11); //10 without offset
 }

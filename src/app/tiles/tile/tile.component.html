@@ -2,7 +2,8 @@
     class="hexagon" 
     [class.even]="even"
     [style]="{ opacity }"
-    (mouseover)="reduceOpacity()">
+    (mouseover)="reduceOpacity()"
+    (dblclick)="stabilize()">
 
     <div class="inner-hexagon"></div>
 </div>
