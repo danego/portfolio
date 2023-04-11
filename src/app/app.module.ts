@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HoverPhotoComponent } from './hover-photo/hover-photo.component';
-import { PositionCircleDirective } from './position-circle.directive';
+import { PositionCircleDirective } from './directives/position-circle.directive';
 import { NavigateMobileComponent } from './navigate-mobile/navigate-mobile.component';
 import { TilesComponent } from './tiles/tiles.component';
 import { TileComponent } from './tiles/tile/tile.component';

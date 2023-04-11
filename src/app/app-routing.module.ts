@@ -3,7 +3,7 @@ import { Routes, RouterModule, PreloadAllModules, CanDeactivate } from '@angular
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { CanDeactivateBg } from './can-deactivate-bg.service';
+import { CanDeactivateBg } from './services/can-deactivate-bg.service';
 import { TilesComponent } from './tiles/tiles.component';
 
 const routes: Routes = [

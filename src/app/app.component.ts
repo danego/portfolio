@@ -3,7 +3,7 @@ import { Router, Event, NavigationEnd, RouterOutlet } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { navigateAnimations } from './navigateAnimations'; 
-import { DisplayBgGradientService } from './display-bg-gradient.service';
+import { DisplayBgGradientService } from './services/display-bg-gradient.service';
 
 @Component({
   selector: 'app-root',

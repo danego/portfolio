@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { DisplayBgGradientService } from '../display-bg-gradient.service';
+import { DisplayBgGradientService } from '../services/display-bg-gradient.service';
 
 
 @Component({
